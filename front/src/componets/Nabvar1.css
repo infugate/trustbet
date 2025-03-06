@@ -1,0 +1,280 @@
+/* General Body Styling */
+body {
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+      }
+      
+      /* Navbar Styling */
+      #navbar {
+        background-color: #002642;
+        color: #070606;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 15px;
+        position: relative;
+        z-index: 10;
+      }
+      
+      #navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+      
+      #logo {
+        font-size: 20px;
+        font-weight: bold;
+        color: #f8f9fa;
+      }
+      
+      /*Navigation Menu */
+      #nav-menu {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .nav-button {
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        font-size: 14px;
+        cursor: pointer;
+        padding: 5px 10px;
+        border-radius: 3px;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+      }
+      
+      .nav-button:hover {
+        background-color: #004a75;
+        color: #f0f0f0;
+      }
+      
+      /* Scrolling Line */
+      #scrolling-line {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 45%;
+        white-space: nowrap;
+        overflow: hidden;
+        padding: 5px 0;
+        background-color: #002642;
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+        animation: scroll-line 30s linear infinite;
+      }
+      
+      /* Dropdown Menu */
+      .dropdown-menu {
+        position: absolute;
+        top: 50px;
+        right: 15px;
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 200;
+        width: 200px;
+        text-align: center;
+      }
+      
+      .dropdown-item {
+        background-color: transparent;
+        color: black;
+        border: none;
+        padding: 8px 5px;
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+        width: 100%;
+      }
+      
+      .dropdown-item a {
+        color: black;
+        font-weight: 1500;
+      }
+      
+      .dropdown-item:hover {
+        background-color: #0066a1;
+        text-decoration: underline;
+      }
+      
+      /* Scrolling Animation */
+      @keyframes scroll-line {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+      
+      /* Popup Modal */
+      .modal {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        width: 90%;
+        max-width: 600px;
+        z-index: 30;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-height: 90vh;
+        overflow: hidden;
+      }
+      
+      /* Modal Header */
+      .modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 10px;
+        position: relative;
+        background-color: #004a75;
+        color: white;
+      }
+      
+      /* Close Button Fixed at Bottom */
+      .close-button {
+        background: #ff4d4d;
+        color: #fff;
+        border: none;
+        font-size: 14px;
+        cursor: pointer;
+        padding: 8px 12px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease-in-out;
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        z-index: 35;
+      }
+      
+      .close-button:hover {
+        background: #ff1a1a;
+      }
+      
+      /* Modal Body with Scroll */
+      .modal-body {
+        flex: 1;
+        overflow-y: auto;
+        width: 100%;
+        padding: 10px 0;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        max-height: calc(90vh - 100px);
+      }
+      
+      /* Rules Sidebar */
+      .rules-sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-right: 15px;
+      }
+      
+      .rules-button {
+        padding: 10px;
+        border: 1px solid #ccc;
+        background: #f8f9fa;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+      }
+      
+      .rules-button:hover {
+        background-color: #0066a1;
+        color: #fff;
+      }
+      
+      .rule-book {
+        flex: 1;
+        padding: 15px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        max-height: calc(90vh - 150px);
+        overflow-y: auto;
+      }
+      
+      /* Modal Footer */
+      .modal-footer {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        margin-top: 1px;
+      
+      }
+      
+      .btn-secondary {
+        background-color: #004a75;
+        color: #fff;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+      }
+      
+      .btn-secondary:hover {
+        background-color: #0066a1;
+      }
+      
+      /* Overlay */
+      .modal.fade.show {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 20;
+      }
+      
+      /* Responsive Adjustments */
+      @media (max-width: 768px) {
+        #navbar {
+          padding: 0 10px;
+          /* width: 102%; */
+          width: auto;
+        }
+      
+        .nav-button {
+          padding: 4px 8px;
+          font-size: 13px;
+        }
+      
+        #scrolling-line {
+          font-size: 12px;
+        }
+      
+        .modal {
+          width: 95%;
+          max-height: 95vh;
+        }
+      }
+      
+      @media (min-width: 785px) {
+        .nav-button {
+          padding: 6px 12px;
+          font-size: 16px;
+        }
+      }
+      

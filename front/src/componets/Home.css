@@ -1,0 +1,163 @@
+.home-container {
+        width:100%;
+        margin-top: 3px;
+        
+    }
+    
+    .home-nav1 {
+        max-width: 100%;
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+    }
+    
+    .home-nav1-button {
+        height:30px; /* Set height as a percentage */
+        width: 19.6%;
+        background-color: rgb(82, 100, 152);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+    
+    .flicker {
+        animation: flicker 2s infinite; /* Apply flicker effect to both icon and text */
+    }
+    
+    /* Define the flicker animation */
+    @keyframes flicker {
+        0% {
+            opacity: 1;
+        }
+        25% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        75% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    .home-nav2-container {
+        margin-top: 1%; /* Use percentage for margin */
+        max-width: 100%;
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        flex-wrap: nowrap;
+        scrollbar-color: rgb(82, 100, 152) rgb(37, 46, 82); /* Set scrollbar color */
+        background-color: rgb(204, 204, 204);
+       
+    }
+    
+    
+    
+    .home-nav2 {
+        min-width: 12%;
+        height: 30px;
+        /* margin-right: 0.6%; Use percentage for margin */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        border-radius: 1px;
+       /* border: 1px solid burlywood; */
+        background-color: rgb(204, 204, 204);
+        text-align: center;
+        flex-shrink: 0;
+        border-right: 1px solid rgb(82, 100, 152);
+        
+    }
+    .home-nav2:hover{
+        cursor: pointer;
+      background-color: rgb(82, 100, 152);
+      border-radius: 2px;
+    }
+    
+    .home-main{
+        width: 100%;
+        
+    }
+    
+    @media (max-width: 768px) {
+        .sidebar-div {
+            display: none;
+        }
+    
+        .home-container{
+            width: 57.2%;
+        }
+    
+        .home-nav1-button {
+            height: 50px; /* Adjusted height in percentage */
+            width: 19.6%;
+        }
+        
+        .home-nav2-container{
+            width: 100%;
+           ;
+        }
+    
+       
+    
+        
+    
+        .home-nav2-container {
+    
+            display: flex;
+            justify-content: space-between;
+            overflow-x: auto;
+            
+        }
+    
+        .home-nav2 {
+            min-width: 23%;
+            height: 30px; /* Adjusted height in percentage */
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .home-container {
+            width: 100%;
+           
+        }
+    
+        .home-nav1 {
+            width: 110%; /* Ensures full-width for the nav1 container */
+            display: flex;
+            flex-wrap:nowrap ;
+            justify-content: space-between; /* Centers buttons horizontally */
+            overflow-x: auto;
+            gap: 4px;
+            height: 35px;
+            margin-top: 1px;
+        }
+       
+        .home-nav1-button {
+            height: 50px; /* Adjusted height to percentage */
+            width: 49%; /* Adjusted to fit two buttons per row */
+            flex-shrink: 0;
+        }
+    
+        .home-nav2-container {
+                width: 100%;
+                height: 40px;
+                display: flex;
+                align-items: center;
+            
+        }
+    
+        .home-nav2 {
+            min-width: 40%; /* Adjusted min-width for better usability */
+            height: 50px; /* Adjusted height to percentage */
+        }
+    }

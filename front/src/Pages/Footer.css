@@ -1,0 +1,50 @@
+
+.footer {
+        background-color: #f8f9fa; /* Light background for footer */
+        padding: 5px 0; /* Reduced padding to decrease the height */
+        height: 40px; /* Fixed height */
+        position: fixed; /* Fixes the footer to the bottom */
+        bottom: 0; /* Sticks the footer to the bottom */
+        width: 100%; /* Ensures the footer spans across the width of the page */
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Vertically centers the text */
+      }
+      
+      .footer-top {
+        display: flex; /* Aligns child elements in a row */
+        justify-content: space-between; /* Space between child elements */
+        align-items: center; /* Vertically centers items */
+        width: 100%; /* Full width of the footer */
+      }
+      
+      .footer-links,
+      .support-detail,
+      .social-icons-box {
+        flex: 1; /* Equal width for each section */
+        text-align: center; /* Center-align the content */
+      }
+      
+      .support-detail h2 {
+        font-size: 18px; /* Reduced font size for the heading */
+        color: #333;
+      }
+      
+      .support-detail p {
+        font-size: 14px; /* Reduced font size for the paragraph */
+        color: #555;
+      }
+      
+      .social-icons-box {
+        /* Add styles for your social icons */
+        display: flex;
+        justify-content: center;
+        gap: 8px; /* Reduced space between icons */
+      }
+      
+      .social-icons-box a {
+        text-decoration: none;
+        font-size: 16px; /* Reduced font size for the icons */
+        color: #333;
+      }
+      

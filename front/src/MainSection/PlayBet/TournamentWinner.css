@@ -1,0 +1,184 @@
+.tournament_winner .T20_header{
+    margin-bottom: 0;
+    width: 98%;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  
+  
+  .custom-table th,
+  .custom-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    /* text-align: center; */
+  }
+  
+  .custom-table th:first-child,
+  .custom-table td:first-child {
+    width: 19%; /* Make the first column (Max: 1) 50% of the table's width */
+  }
+  
+  .custom-table td div {
+    display: block;
+    text-align: center;
+  }
+  
+  /* Ensure the other columns share the remaining space equally */
+  .custom-table td:not(:first-child) {
+    width: calc(50% / 6); /* Divides the remaining space (50%) evenly among 6 columns */
+  }
+  
+  .custom-table th:not(:first-child),
+  .custom-table td:not(:first-child) {
+    width: calc(50% / 6); /* Divides the remaining space (50%) evenly among 6 columns */
+  }
+
+  .custom-table th:nth-child(1), .scrolling_text {
+    display: flex;
+    color: rgb(9, 124, 147);
+    font-size: 12px;
+   
+}
+
+.custom-table td:nth-child(1) {
+    font-size: 15px;
+    font-weight: 500;
+    width: 98%;
+    
+}
+
+.custom-table td:nth-child(1) div {
+  
+  width: auto;
+  
+}
+  
+  .value-1 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .value-2 {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .custom-table td:nth-child(2) {
+    background-color: rgb(178 234 240);
+}
+
+.custom-table td:nth-child(3) {
+    background-color: rgb(146, 201, 240); 
+}
+
+.custom-table td:nth-child(4) {
+    background-color: rgb(114, 187, 239);
+}
+
+
+
+.custom-table td:nth-child(5) {
+    background-color: rgb(250, 169, 186); 
+}
+
+.custom-table td:nth-child(6) {
+    background-color: rgb(248, 188, 200); 
+}
+
+.custom-table td:nth-child(7) {
+    background-color: rgb(246, 205, 214); 
+}
+
+.custom-table th:nth-child(4){
+    background-color: rgb(114, 187, 239); /* Black background for the "BACK" column header */
+   
+}
+
+.custom-table th:nth-child(5){
+    background-color: rgb(250, 169, 186); /* Black background for the "LAY" column header */
+   
+}
+
+
+.profit-show{
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+}
+
+
+.scrolling_text {
+  width: 100%; /* Set width to span across the container */
+  overflow: hidden; 
+  white-space: nowrap; /* Prevent text from wrapping */
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.scrolling_text h3 {
+  display: inline-block; /* Make the text inline to enable scrolling */
+  padding-left: 100%; /* Start outside the viewport */
+  animation: scrollText 10s linear infinite; /* Apply the animation */
+  position: relative;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(0%); /* Start off-screen to the right */
+  }
+  100% {
+    transform: translateX(-150%); /* Move completely off-screen to the left */
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    
+    .custom-table{
+      width: 100% !important;
+      font-size: 13px;
+    }
+
+    .profit-show{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: baseline;
+    }
+
+    
+  
+    .custom-table th, .custom-table td{
+      padding:  5px;
+      
+    }
+  
+    .scrolling_text h3 {
+       
+      animation: scrollText 5s linear infinite; /* Apply the animation */
+      
+    }
+    .custom-table th:first-child, .custom-table td:first-child {
+      width: 46%;
+  }
+    
+    @keyframes scrollText {
+      0% {
+        transform: translateX(0%); /* Start off-screen to the right */
+      }
+      100% {
+        transform: translateX(-220%); /* Move completely off-screen to the left */
+      }
+    }
+
+  }
+  
+
+  
+
+
+

@@ -1,0 +1,162 @@
+body{
+        margin: 0;
+        padding: 0;
+}
+.modal-body {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 20px;
+      }  
+      .rules-sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 20%;body{
+        margin: 0;
+        padding: 0;
+}
+.modal-body {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 20px;
+      }  
+      .rules-sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 20%;
+      }
+      
+      .rules-button {
+        padding: 10px;
+        color: black;
+        border: 1px solid black;
+        border-radius: 4px;
+        cursor: pointer;
+        text-align: center;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+      }
+      
+      .rules-button:hover {
+        background-color: #071b31;
+        color: white;
+      }
+      
+      .rule-book {
+        width: 75%;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        font-size: 14px;
+        line-height: 1.6;
+      }
+    
+      .gamerules{
+        background-color: rgb(82, 100, 152);
+        color: rgb(19, 19, 19);
+        font-size: x-large;
+        padding: 10px;
+        text-align: center;
+      }
+      
+      /* Responsive Styles for Mobile Devices */
+      @media screen and (max-width: 480px) {
+        .modal-body {
+          flex-direction: column; /* Stack items vertically */
+          align-items: center;
+        }
+      
+        .rules-sidebar {
+          width: 100%; /* Sidebar takes full width */
+          margin-bottom: 10px; /* Add spacing below the sidebar */
+          display: flex;
+          flex-direction: row; /* Buttons in a row */
+          justify-content: center;
+          flex-wrap: wrap; /* Wrap buttons if needed */
+        }
+      
+        .rules-button {
+          margin: 1px; /* Add spacing between buttons */
+          flex: 1; /* Make buttons take equal space */
+          max-width: 45%; /* Limit button width for smaller screens */
+          padding: 8px;
+          font-size: 14px;
+        }
+      
+        .rule-book {
+          width: 100%; /* Take full width below the sidebar */
+          padding: 10px;
+          margin-top: 10px; /* Add spacing above the rule-book */
+        }
+      }
+      }
+      
+      .rules-button {
+        padding: 10px;
+        color: black;
+        border: 1px solid black;
+        border-radius: 4px;
+        cursor: pointer;
+        text-align: center;
+        font-size: 16px;
+      }
+      
+      .rules-button:hover {
+        background-color: #0056b3;
+      }
+      
+      .rule-book {
+        width: 75%;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        font-size: 14px;
+        line-height: 1.6;
+      }
+    
+      .gamerules{
+        background-color: rgb(82, 100, 152);
+        color: rgb(19, 19, 19);
+        font-size: x-large;
+        
+      }
+      
+      /* Responsive Styles for Mobile Devices */
+      @media screen and (max-width: 480px) {
+        .modal-body {
+          flex-direction: column; /* Stack items vertically */
+          align-items: center;
+        }
+      
+        .rules-sidebar {
+          width: 100%; /* Sidebar takes full width */
+          margin-bottom: 10px; /* Add spacing below the sidebar */
+          display: flex;
+          flex-direction: row; /* Buttons in a row */
+          justify-content: center;
+          flex-wrap: wrap; /* Wrap buttons if needed */
+        }
+      
+        .rules-button {
+          margin: 1px; /* Add spacing between buttons */
+          flex: 1; /* Make buttons take equal space */
+          max-width: 45%; /* Limit button width for smaller screens */
+          padding: 8px;
+          font-size: 14px;
+        }
+      
+        .rule-book {
+          width: 100%; /* Take full width below the sidebar */
+          padding: 10px;
+          margin-top: 10px; /* Add spacing above the rule-book */
+        }
+      }

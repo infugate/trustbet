@@ -1,0 +1,43 @@
+.maincontainor {
+        display: flex;
+       
+        width: 100%;
+        min-height: 100vh; /* Optional: Full viewport height */
+      }
+      
+      .leftSide {
+     
+      }
+      
+      .rightSide {
+        width: 81vw; /* 75% width for larger screens */
+        background-color: #f5f1f1; /* Example background color */
+        padding: 20px;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+
+      }
+      
+      /* Responsive Design */
+      @media (max-width: 768px) { /* For tablets and smaller screens */
+        /* .leftSide,
+        .rightSide {
+          width: 100%; 
+          padding: 10px; 
+          
+        } */
+        /* .maincontainor .leftSide{
+                display: none;
+        }
+        .maincontainor .rightSide{
+                display: none;
+                width: 100%;
+        } */
+
+        .rightSide {
+             width: 100%;
+                padding: 0px; 
+              }
+      }
+      

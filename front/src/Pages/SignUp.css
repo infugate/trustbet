@@ -1,0 +1,205 @@
+body {
+        background-color: #202c50d9; 
+        margin: 0;
+        font-family: Arial, sans-serif;
+        -webkit-tap-highlight-color: transparent; /* Remove highlight color for touch devices */
+    user-select: none; /* Prevent text selection */
+      }
+
+      .xyz{
+        margin-top: 110px;
+      }
+      
+      /* Container Styling */
+      .login-container2 {
+        text-align: center;
+        padding: 20px;
+        background-color: white; 
+        color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        max-width: 400px;
+        margin: 50px auto;
+      }
+      
+      /* Header Styling */
+      h1 {
+        margin-top: 0;
+        font-size: 24px;
+      }
+      
+      /* Navbar Styling */
+      .login-container2 .navbar {
+        padding: 10px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3px;
+      }
+      
+      .login-container2 .navbar p {
+        margin: 0;
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      
+      .login-icon {
+        font-size: 40px; 
+        color: #252E52; 
+        margin-bottom: 10px;
+      }
+      
+      /* Form Styling */
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      
+      .form-group {
+        position: relative;
+        width: 100%;
+      }
+      
+      .input-icon {
+        width: 100%;
+        padding: 10px;
+        padding-right: 35px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 14px;
+        box-sizing: border-box;
+      }
+      
+      .icon {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #555;
+        font-size: 18px;
+        pointer-events: none;
+      }
+      
+      /* Button Styling */
+      .button-group {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+      }
+      
+      .btn-icon {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%; /* Make buttons full-width */
+        padding: 10px 20px;
+        background-color: #252E52;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.3s;
+      }
+      
+      .btn-icon-right {
+        margin-left: 10px; /* Add space between text and icon */
+        font-size: 18px;
+      }
+      
+      .btn-icon:hover {
+        background-color: #1f2342;
+      }
+      
+      /* Footer Styling */
+      .footer-d p {
+        font-size: 12px;
+        color: #aaa;
+        margin-top: 15px;
+      }
+      
+      .logo {
+        text-align: center;
+        color: black;
+      }
+      
+      .footer {
+        display: flex;
+      }
+      
+      .footer {
+        background-color: #252e52; 
+        padding: 5px 0; 
+        height: 40px;
+        position: fixed;
+        bottom: 0; 
+        width: 100%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .footer-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+      
+      .footer-links,
+      .support-detail,
+      .social-icons-box {
+        flex: 1; 
+        text-align: center; 
+      }
+      
+      .support-detail h2 {
+        font-size: 18px; 
+        color: white;
+      }
+      
+      .support-detail p {
+        font-size: 14px; 
+        color: #555;
+      }
+      
+      .social-icons-box {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+      }
+      
+      .social-icons-box a {
+        text-decoration: none;
+        font-size: 16px; 
+        color: #333;
+      }
+      
+      /* Sign In Link Styling */
+      .sign-in-link {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #555;
+      }
+      
+      .sign-in-link a {
+        color: #252E52;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      
+      .sign-in-link a:hover {
+        text-decoration: underline;
+      }
+      
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        .login-container {
+          width: 90%;
+          margin: 0 auto;
+        }
+      }
+      

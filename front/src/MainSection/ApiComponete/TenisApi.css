@@ -1,0 +1,95 @@
+body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: rgb(239, 236, 236);
+      }
+      
+      .game-list {
+        padding: 0;
+        margin: 0;
+      }
+      
+      .responsive-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0 auto;
+      }
+      
+      .responsive-table thead th {
+        background-color: rgb(235, 230, 230);
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: center; 
+      }
+      
+      .responsive-table thead th:first-child {
+        text-align: left; 
+      }
+      
+      .responsive-table tbody td {
+        padding: 3px;
+        border: 1px solid #ddd;
+        font-size: small;
+        text-align: left;
+      }
+      
+      .clickable-row {
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      
+      .clickable-row:hover {
+        background-color: #e6f7ff; 
+      }
+
+     tbody  .colspan1{
+      background-color: #72bbef !important;
+      width: 70px;
+      text-align: center;
+      
+     }
+     tbody  .colspan2{
+      background-color: #faa9ba !important;
+      width: 70px;
+      text-align: center;
+     }
+
+      @media (max-width: 768px) {
+        .responsive-table,
+        .responsive-table thead,
+        .responsive-table tbody,
+        .responsive-table th,
+        .responsive-table td,
+        .responsive-table tr {
+          display: block;
+          width: 100%;
+        padding: 0px;
+        }
+      
+        .responsive-table thead tr {
+          display: none;
+        }
+      
+        .responsive-table td {
+          border: none;
+          position: relative;
+          padding-left: 50%;
+          text-align: left;
+        }
+      
+        .responsive-table td:before {
+          content: attr(data-label);
+          position: absolute;
+          left: 10px;
+          width: calc(50% - 20px);
+          white-space: nowrap;
+          font-weight: bold;
+        }
+      }
+      
+
+
+
+      

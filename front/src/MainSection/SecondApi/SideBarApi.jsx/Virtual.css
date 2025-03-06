@@ -1,0 +1,51 @@
+/* General Styles */
+body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      
+      .navbar52 {
+        list-style-type: none;
+        display: flex;
+        overflow-x: auto; /* Enable horizontal scrolling */
+        white-space: nowrap; /* Prevent wrapping of items */
+        padding: 1px;
+        background-color: #0088CCA5;
+        margin-top: 5px;
+      }
+      
+      .navbar52 li {
+        padding: 7px 11px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        flex-shrink: 0; /* Prevent items from shrinking */
+      }
+      
+      .navbar52 li a {
+        text-decoration: none;
+        color: white;
+      }
+      
+      .navbar52 li.active {
+        background-color: #0e0ed5;
+        color: blue;
+      }
+      
+      .navbar52 li:hover {
+        background-color: #08027c;
+        color: white;
+      }
+      
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        .navbar52 {
+          flex-direction: row; /* Keep items in a row */
+          justify-content: flex-start; /* Align items to the left */
+          gap: 4px; /* Add spacing between items */
+          margin-top: 0;
+        }
+      }
+
+      
+      

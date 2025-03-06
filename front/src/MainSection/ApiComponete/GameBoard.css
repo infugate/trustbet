@@ -1,0 +1,154 @@
+/* Game Board Container */
+.game-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #edf2f4;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+/* Plane Wrapper */
+.plane-wrapper {
+    position: relative;
+    height: 150px;
+    width: 100%;
+    background: #8d99ae;
+    border-radius: 12px;
+    border: 2px solid #2b2d42;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+/* Plane Image */
+.plane {
+    position: absolute;
+    bottom: 20px; /* Start at the bottom */
+    left: 0;
+    width: 60px;
+    height: auto;
+    transition: transform 0.1s linear; /* Smooth transformation */
+}
+
+/* Info Display */
+.info {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.multiplier,
+.highest-multiplier {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2b2d42;
+}
+
+.previous-multiplier {
+    font-size: 1.2rem;
+    color: #4a4e69;
+    margin-top: 0.5rem;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: #ef233c;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:disabled {
+    background: #8d99ae;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background: #d90429;
+}
+
+/* Flying Animation (Diagonal Motion) */
+.plane.flying {
+    animation: fly 15s linear infinite; /* Slow down the movement */
+}
+
+
+/* Quick Bet Buttons */
+.quick-bet-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.quick-bet-buttons button {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background: #2b2d42;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.quick-bet-buttons button:disabled {
+    background: #8d99ae;
+    cursor: not-allowed;
+}
+
+.quick-bet-buttons button:hover:not(:disabled) {
+    background: #d90429;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.buttons button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: #2b2d42;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.buttons button:disabled {
+    background: #8d99ae;
+    cursor: not-allowed;
+}
+
+.buttons button:hover:not(:disabled) {
+    background: #d90429;
+}
+
+
+/* Plane Movement along a Diagonal Line (y = mx) with reduced slope */
+@keyframes fly {
+    0% {
+        transform: translateX(0) translateY(0); /* Starting point */
+    }
+    100% {
+        transform: translateX(500px) translateY(-100px); /* Reduced slope, move less vertically */
+    }
+}

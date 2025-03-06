@@ -1,0 +1,237 @@
+/* .scrolling-nav-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 0;
+        background-color: #0088cca5;
+        margin-top: 3px;
+      }
+      
+      
+      .scrolling-nav {
+        display: flex;
+        overflow-x: hidden;
+        width: calc(100% - 100px); 
+      }
+      
+    
+      .scrolling-nav-list {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      
+     
+      .scrolling-nav-item {
+        padding: 10px 15px; 
+        margin: 0 5px;
+        border-radius: 5px;
+        white-space: nowrap;
+        cursor: pointer;
+        text-align: center;
+        transition: background-color 0.3s;
+        color: white;
+        font-size: medium;
+      }
+      
+      .scrolling-nav-item:hover {
+        background-color: #070606;
+      }
+      
+    
+      .scroll-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #3fce7be0;
+        color: #fff;
+        border: none;
+        height: 39px;
+        width: 49px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 16px;
+        z-index: 1;
+      }
+      
+      .scroll-button.left {
+        left: 0;
+        color: black;
+      }
+      
+      .scroll-button.right {
+        right: 0;
+        color: black;
+      }
+      
+
+      @media (max-width: 768px) {
+        .scrolling-nav-container {
+          margin-top: 5px;
+          padding: 5px;
+          border-radius: 4px;
+        }
+      
+        .scrolling-nav-item {
+          padding: 8px 12px;
+          font-size: small;
+        }
+      
+        .scroll-button {
+          height: 35px;
+          width: 40px;
+          font-size: 14px;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .scrolling-nav-container {
+          border-radius: 2px;
+        }
+      
+        .scrolling-nav-item {
+          padding: 5px 10px;
+          font-size: smaller;
+          margin: 0 3px;
+        }
+      
+        .scroll-button {
+          height: 30px;
+          width: 35px;
+          font-size: 12px;
+        }
+      }
+       */
+
+
+
+       .scrolling-nav-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 0;
+        background-color: #0088cca5;
+        margin-top: 3px;
+      }
+      
+      .scrolling-nav {
+        display: flex;
+        overflow-x: auto;
+        scrollbar-width: thin; 
+        -ms-overflow-style: none;
+        width: calc(103% - 90px); 
+        scroll-behavior: smooth;
+      }
+      
+      .scrolling-nav::-webkit-scrollbar {
+        display: none; 
+      }
+      
+   
+      .scrolling-nav-list {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      
+  
+      .scrolling-nav-item {
+        padding:4px 11px; 
+        margin: 0 5px;
+        border-radius: 5px;
+        white-space: nowrap;
+        cursor: pointer;
+        text-align: center;
+        transition: background-color 0.3s;
+        color: white;
+        font-size: medium;
+      }
+      
+      .scrolling-nav-item:hover {
+        background-color: #070606;
+      }
+      
+    
+      .scroll-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #3fce7be0;
+        color: #fff;
+        border: none;
+        height: 39px;
+        width: 49px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 16px;
+        z-index: 1;
+      }
+      
+      .scroll-button.left {
+        left: 0;
+        color: black;
+      }
+      
+      .scroll-button.right {
+        right: 0;
+        color: black;
+      }
+      
+  
+      @media (max-width: 768px) {
+        .scrolling-nav-container {
+          margin-top: 5px;
+          padding: 5px;
+          border-radius: 4px;
+        }
+      
+        .scrolling-nav {
+          overflow-x: auto;
+        }
+      
+        .scrolling-nav-item {
+          padding: 8px 12px;
+          font-size: small;
+        }
+      
+        .scroll-button {
+          height: 35px;
+          width: 40px;
+          font-size: 14px;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .scrolling-nav-container {
+          border-radius: 2px;
+        }
+      
+        .scrolling-nav {
+          overflow-x: auto;
+        }
+      
+        .scrolling-nav-item {
+          padding: 5px 10px;
+          font-size: smaller;
+          margin: 0 3px;
+        }
+      
+        .scroll-button {
+          height: 30px;
+          width: 35px;
+          font-size: 12px;
+        }
+      }
+      

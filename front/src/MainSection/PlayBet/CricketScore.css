@@ -1,0 +1,53 @@
+
+.scorecard{
+        display: flex;
+        flex-direction: column;
+        height: 3%;
+        background-image: url("https://www.shutterstock.com/image-vector/creative-cricket-stadium-poster-line-600nw-2374638565.jpg");
+        /* background-repeat: no-repeat; */
+        background-size: contain;
+        background-repeat: repeat-x;
+        color: aliceblue;
+}
+.scorecard .upper{
+        margin-top: 0px;
+}
+.scorecard .upper ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0px;
+        padding: 0;
+}
+.scorecard .upper ul li{
+       text-decoration: none;
+}
+.scorecard .lower ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0px;
+        padding: 0;
+        margin-top: 9px;
+}
+
+.scorecard ul {
+        list-style: none; /* Removes default bullet styling */
+        margin: 0;
+        padding: 0;
+      }
+      
+      .scorecard ul li {
+        display: block; /* Ensures each <li> is displayed in a new line */
+        margin-bottom: 5px; /* Optional: Add space between items */
+      }
+
+      .runs-table th:nth-child(3) {
+        background-color: rgb(239, 239, 114);
+        color: black;
+    }
+
+    .runs-table td:nth-child(3) {
+        background-color: rgb(239, 239, 114);
+    }
+      
